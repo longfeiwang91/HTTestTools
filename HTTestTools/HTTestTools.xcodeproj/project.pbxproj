@@ -10,27 +10,8 @@
 		A70192C122F0549C00D919C8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A70192C022F0549C00D919C8 /* AppDelegate.m */; };
 		A70192C922F0549C00D919C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A70192C822F0549C00D919C8 /* Assets.xcassets */; };
 		A70192CF22F0549C00D919C8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A70192CE22F0549C00D919C8 /* main.m */; };
-		A70192D922F0549C00D919C8 /* HTTestToolsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A70192D822F0549C00D919C8 /* HTTestToolsTests.m */; };
-		A70192E422F0549C00D919C8 /* HTTestToolsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A70192E322F0549C00D919C8 /* HTTestToolsUITests.m */; };
 		A70192F322F0562E00D919C8 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A70192F222F0562E00D919C8 /* RootViewController.m */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		A70192D522F0549C00D919C8 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A70192B422F0549C00D919C8 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = A70192BB22F0549C00D919C8;
-			remoteInfo = HTTestTools;
-		};
-		A70192E022F0549C00D919C8 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A70192B422F0549C00D919C8 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = A70192BB22F0549C00D919C8;
-			remoteInfo = HTTestTools;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		A70192BC22F0549C00D919C8 /* HTTestTools.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HTTestTools.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -39,32 +20,12 @@
 		A70192C822F0549C00D919C8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A70192CD22F0549C00D919C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A70192CE22F0549C00D919C8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		A70192D422F0549C00D919C8 /* HTTestToolsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HTTestToolsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A70192D822F0549C00D919C8 /* HTTestToolsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HTTestToolsTests.m; sourceTree = "<group>"; };
-		A70192DA22F0549C00D919C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A70192DF22F0549C00D919C8 /* HTTestToolsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HTTestToolsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A70192E322F0549C00D919C8 /* HTTestToolsUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HTTestToolsUITests.m; sourceTree = "<group>"; };
-		A70192E522F0549C00D919C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A70192F122F0562E00D919C8 /* RootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
 		A70192F222F0562E00D919C8 /* RootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		A70192B922F0549C00D919C8 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A70192D122F0549C00D919C8 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A70192DC22F0549C00D919C8 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -78,8 +39,6 @@
 			isa = PBXGroup;
 			children = (
 				A70192BE22F0549C00D919C8 /* HTTestTools */,
-				A70192D722F0549C00D919C8 /* HTTestToolsTests */,
-				A70192E222F0549C00D919C8 /* HTTestToolsUITests */,
 				A70192BD22F0549C00D919C8 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -88,8 +47,6 @@
 			isa = PBXGroup;
 			children = (
 				A70192BC22F0549C00D919C8 /* HTTestTools.app */,
-				A70192D422F0549C00D919C8 /* HTTestToolsTests.xctest */,
-				A70192DF22F0549C00D919C8 /* HTTestToolsUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -106,24 +63,6 @@
 				A70192CE22F0549C00D919C8 /* main.m */,
 			);
 			path = HTTestTools;
-			sourceTree = "<group>";
-		};
-		A70192D722F0549C00D919C8 /* HTTestToolsTests */ = {
-			isa = PBXGroup;
-			children = (
-				A70192D822F0549C00D919C8 /* HTTestToolsTests.m */,
-				A70192DA22F0549C00D919C8 /* Info.plist */,
-			);
-			path = HTTestToolsTests;
-			sourceTree = "<group>";
-		};
-		A70192E222F0549C00D919C8 /* HTTestToolsUITests */ = {
-			isa = PBXGroup;
-			children = (
-				A70192E322F0549C00D919C8 /* HTTestToolsUITests.m */,
-				A70192E522F0549C00D919C8 /* Info.plist */,
-			);
-			path = HTTestToolsUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,42 +85,6 @@
 			productReference = A70192BC22F0549C00D919C8 /* HTTestTools.app */;
 			productType = "com.apple.product-type.application";
 		};
-		A70192D322F0549C00D919C8 /* HTTestToolsTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = A70192EB22F0549C00D919C8 /* Build configuration list for PBXNativeTarget "HTTestToolsTests" */;
-			buildPhases = (
-				A70192D022F0549C00D919C8 /* Sources */,
-				A70192D122F0549C00D919C8 /* Frameworks */,
-				A70192D222F0549C00D919C8 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				A70192D622F0549C00D919C8 /* PBXTargetDependency */,
-			);
-			name = HTTestToolsTests;
-			productName = HTTestToolsTests;
-			productReference = A70192D422F0549C00D919C8 /* HTTestToolsTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		A70192DE22F0549C00D919C8 /* HTTestToolsUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = A70192EE22F0549C00D919C8 /* Build configuration list for PBXNativeTarget "HTTestToolsUITests" */;
-			buildPhases = (
-				A70192DB22F0549C00D919C8 /* Sources */,
-				A70192DC22F0549C00D919C8 /* Frameworks */,
-				A70192DD22F0549C00D919C8 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				A70192E122F0549C00D919C8 /* PBXTargetDependency */,
-			);
-			name = HTTestToolsUITests;
-			productName = HTTestToolsUITests;
-			productReference = A70192DF22F0549C00D919C8 /* HTTestToolsUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -193,14 +96,6 @@
 				TargetAttributes = {
 					A70192BB22F0549C00D919C8 = {
 						CreatedOnToolsVersion = 10.3;
-					};
-					A70192D322F0549C00D919C8 = {
-						CreatedOnToolsVersion = 10.3;
-						TestTargetID = A70192BB22F0549C00D919C8;
-					};
-					A70192DE22F0549C00D919C8 = {
-						CreatedOnToolsVersion = 10.3;
-						TestTargetID = A70192BB22F0549C00D919C8;
 					};
 				};
 			};
@@ -218,8 +113,6 @@
 			projectRoot = "";
 			targets = (
 				A70192BB22F0549C00D919C8 /* HTTestTools */,
-				A70192D322F0549C00D919C8 /* HTTestToolsTests */,
-				A70192DE22F0549C00D919C8 /* HTTestToolsUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -230,20 +123,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				A70192C922F0549C00D919C8 /* Assets.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A70192D222F0549C00D919C8 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A70192DD22F0549C00D919C8 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,36 +139,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A70192D022F0549C00D919C8 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A70192D922F0549C00D919C8 /* HTTestToolsTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A70192DB22F0549C00D919C8 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A70192E422F0549C00D919C8 /* HTTestToolsUITests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		A70192D622F0549C00D919C8 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = A70192BB22F0549C00D919C8 /* HTTestTools */;
-			targetProxy = A70192D522F0549C00D919C8 /* PBXContainerItemProxy */;
-		};
-		A70192E122F0549C00D919C8 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = A70192BB22F0549C00D919C8 /* HTTestTools */;
-			targetProxy = A70192E022F0549C00D919C8 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		A70192E622F0549C00D919C8 /* Debug */ = {
@@ -440,82 +290,6 @@
 			};
 			name = Release;
 		};
-		A70192EC22F0549C00D919C8 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = RDRP4TN724;
-				INFOPLIST_FILE = HTTestToolsTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.LongfeiWang.www.HTTestToolsTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HTTestTools.app/HTTestTools";
-			};
-			name = Debug;
-		};
-		A70192ED22F0549C00D919C8 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = RDRP4TN724;
-				INFOPLIST_FILE = HTTestToolsTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.LongfeiWang.www.HTTestToolsTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HTTestTools.app/HTTestTools";
-			};
-			name = Release;
-		};
-		A70192EF22F0549C00D919C8 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = RDRP4TN724;
-				FRAMEWORK_SEARCH_PATHS = "$(PLATFORM_DIR)/Developer/Library/Frameworks";
-				INFOPLIST_FILE = HTTestToolsUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.LongfeiWang.www.HTTestToolsUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = HTTestTools;
-			};
-			name = Debug;
-		};
-		A70192F022F0549C00D919C8 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = RDRP4TN724;
-				FRAMEWORK_SEARCH_PATHS = "$(PLATFORM_DIR)/Developer/Library/Frameworks";
-				INFOPLIST_FILE = HTTestToolsUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.LongfeiWang.www.HTTestToolsUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = HTTestTools;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -533,24 +307,6 @@
 			buildConfigurations = (
 				A70192E922F0549C00D919C8 /* Debug */,
 				A70192EA22F0549C00D919C8 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		A70192EB22F0549C00D919C8 /* Build configuration list for PBXNativeTarget "HTTestToolsTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				A70192EC22F0549C00D919C8 /* Debug */,
-				A70192ED22F0549C00D919C8 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		A70192EE22F0549C00D919C8 /* Build configuration list for PBXNativeTarget "HTTestToolsUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				A70192EF22F0549C00D919C8 /* Debug */,
-				A70192F022F0549C00D919C8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
