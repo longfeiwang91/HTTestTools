@@ -24,7 +24,7 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/longfeiwang91/HTTestTools.git", :tag => "#{s.version}" }
 
 
-  s.source_files  = "HTTestTools", "HTTestTools/HTTestTools/EditMyTools/*.{h,m}"
+  s.source_files  = "HTTestTools", "HTTestTools/HTTestTools/EditMyTools/**/*.{h,m}"
   s.exclude_files = "Classes/Exclude"
 
 
