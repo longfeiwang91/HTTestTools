@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "HTTestTools"
-  s.version      = "0.0.1"
+  s.version      = "1.0.0"
   s.summary      = "A short description of HTTestTools."
 
   s.description  = "龙飞的测试私有库"

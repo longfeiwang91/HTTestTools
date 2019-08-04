@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "RootViewController.h"
+#import "EditMyToolsViewController.h"
 
 @interface AppDelegate ()
 
@@ -21,7 +21,7 @@
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
-    RootViewController *rootVC = [[RootViewController alloc] init];
+    EditMyToolsViewController *rootVC = [[EditMyToolsViewController alloc] init];
     self.window.rootViewController = rootVC;
     [self.window makeKeyAndVisible];
     

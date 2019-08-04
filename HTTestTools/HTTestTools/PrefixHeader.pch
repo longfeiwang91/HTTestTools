@@ -1,0 +1,18 @@
+//
+//  PrefixHeader.pch
+//  HTTestTools
+//
+//  Created by longfei on 2019/8/1.
+//  Copyright © 2019 LongfeiWang. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import "HTETools.h"
+#import "Masonry.h"
+
+#pragma mark - 约束比例
+#define kWidthScale main_Width / 720
+
+#endif /* PrefixHeader_pch */

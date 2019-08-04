@@ -1,0 +1,13 @@
+# Uncomment the next line to define a global platform for your project
+# 
+source 'https://gitee.com/hongtuedu/Spec.git'
+source 'https://github.com/CocoaPods/Specs.git'
+
+platform :ios, '9.0'
+
+target 'HTTestTools' do
+
+  pod 'HTETools'
+  pod 'Masonry'
+
+end
