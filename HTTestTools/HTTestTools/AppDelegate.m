@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "EditMyToolsViewController.h"
+#import "EditMyToolsMainViewController.h"
 
 @interface AppDelegate ()
 
@@ -21,8 +21,10 @@
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
-    EditMyToolsViewController *rootVC = [[EditMyToolsViewController alloc] init];
+    UINavigationController *rootVC = [[UINavigationController alloc] initWithRootViewController:[[EditMyToolsMainViewController alloc] init]];
+    rootVC.navigationBar.hidden = YES;
     self.window.rootViewController = rootVC;
+    
     [self.window makeKeyAndVisible];
     
     return YES;

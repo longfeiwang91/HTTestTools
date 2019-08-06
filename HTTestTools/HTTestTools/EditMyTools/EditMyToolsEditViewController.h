@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface EditMyToolsViewController : UINavigationController
+@interface EditMyToolsEditViewController : UIViewController
 
 @end

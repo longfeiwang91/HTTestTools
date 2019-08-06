@@ -27,5 +27,14 @@ Pod::Spec.new do |s|
   s.source_files  = "HTTestTools", "HTTestTools/HTTestTools/EditMyTools/*.{h,m}"
   s.exclude_files = "Classes/Exclude"
 
+  s.dependency 'HTETools'
+  s.dependency 'Masonry'
+
+  s.prefix_header_contents = <<-EOS
+      #import <HTETools/HTETools.h>
+      #import <XTLPAT_Common/Macro.h>
+      #import <Masonry/Masonry.h>
+  EOS
+
 
 end

@@ -9,10 +9,8 @@
 #ifndef PrefixHeader_pch
 #define PrefixHeader_pch
 
-#import "HTETools.h"
-#import "Masonry.h"
-
-#pragma mark - 约束比例
-#define kWidthScale main_Width / 720
+#import <HTETools/HTETools.h>
+#import <XTLPAT_Common/Macro.h>
+#import <Masonry/Masonry.h>
 
 #endif /* PrefixHeader_pch */

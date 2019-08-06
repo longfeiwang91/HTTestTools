@@ -86,6 +86,19 @@
     }
 }
 
+-(void)setEditState:(EditMyToolsCollectionViewCellEditState)editState
+{
+    _editState = editState;
+    if (_editState == EditMyToolsCollectionViewCellEditStateDetail) {
+        self.layer.borderWidth = 0;
+        _editButton.hidden = YES;
+    }else{
+        self.layer.borderColor = [UIColor grayColor].CGColor;
+        self.layer.borderWidth = 1;
+        _editButton.hidden = NO;
+    }
+}
+
 -(void)buttonClick:(UIButton *)sender{
     if (_buttonClickBlock) {
         _buttonClickBlock(_model);

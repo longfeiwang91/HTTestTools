@@ -9,5 +9,6 @@ target 'HTTestTools' do
 
   pod 'HTETools'
   pod 'Masonry'
+  pod 'XTLPAT_Common'
 
 end

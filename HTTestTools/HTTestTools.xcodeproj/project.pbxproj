@@ -10,13 +10,16 @@
 		17CF8AA504EEE5AF17AD3ADC /* libPods-HTTestTools.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 414649353623F1E98BB2B1F2 /* libPods-HTTestTools.a */; };
 		A70192C122F0549C00D919C8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A70192C022F0549C00D919C8 /* AppDelegate.m */; };
 		A70192CF22F0549C00D919C8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A70192CE22F0549C00D919C8 /* main.m */; };
-		A70192F322F0562E00D919C8 /* EditMyToolsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A70192F222F0562E00D919C8 /* EditMyToolsViewController.m */; };
+		A70192F322F0562E00D919C8 /* EditMyToolsEditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A70192F222F0562E00D919C8 /* EditMyToolsEditViewController.m */; };
 		A73A7A3A22F2DBED00BEAFD0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A73A7A3922F2DBED00BEAFD0 /* Images.xcassets */; };
 		A73A7A4622F2DEDD00BEAFD0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A73A7A4522F2DEDD00BEAFD0 /* Assets.xcassets */; };
 		A73A7A4D22F2FD0C00BEAFD0 /* EditMyToolsCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A73A7A4C22F2FD0C00BEAFD0 /* EditMyToolsCollectionViewCell.m */; };
 		A73A7A5022F2FDAD00BEAFD0 /* EditMyToolsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A73A7A4F22F2FDAD00BEAFD0 /* EditMyToolsModel.m */; };
+		A758672B22F80E1D0068F24B /* EditMyToolsMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A758672A22F80E1D0068F24B /* EditMyToolsMainViewController.m */; };
 		A7E4BE8F22F3CCBF00B597D2 /* EditMyToolsHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = A7E4BE8E22F3CCBF00B597D2 /* EditMyToolsHeaderView.m */; };
 		A7EEDC6C22F30C92006F2A93 /* EditMyToolsCollectionReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = A7EEDC6B22F30C92006F2A93 /* EditMyToolsCollectionReusableView.m */; };
+		A7FB3DC222F84C360043A1F8 /* EditMyToolsDetailViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A7FB3DC122F84C360043A1F8 /* EditMyToolsDetailViewCell.m */; };
+		A7FB3DC522F866B20043A1F8 /* EditToolsDetailHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = A7FB3DC422F866B20043A1F8 /* EditToolsDetailHeaderView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,8 +30,8 @@
 		A70192C022F0549C00D919C8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		A70192CD22F0549C00D919C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A70192CE22F0549C00D919C8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		A70192F122F0562E00D919C8 /* EditMyToolsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EditMyToolsViewController.h; sourceTree = "<group>"; };
-		A70192F222F0562E00D919C8 /* EditMyToolsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EditMyToolsViewController.m; sourceTree = "<group>"; };
+		A70192F122F0562E00D919C8 /* EditMyToolsEditViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EditMyToolsEditViewController.h; sourceTree = "<group>"; };
+		A70192F222F0562E00D919C8 /* EditMyToolsEditViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EditMyToolsEditViewController.m; sourceTree = "<group>"; };
 		A73A7A3922F2DBED00BEAFD0 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		A73A7A4522F2DEDD00BEAFD0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A73A7A4B22F2FD0C00BEAFD0 /* EditMyToolsCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EditMyToolsCollectionViewCell.h; sourceTree = "<group>"; };
@@ -36,10 +39,16 @@
 		A73A7A4E22F2FDAD00BEAFD0 /* EditMyToolsModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EditMyToolsModel.h; sourceTree = "<group>"; };
 		A73A7A4F22F2FDAD00BEAFD0 /* EditMyToolsModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EditMyToolsModel.m; sourceTree = "<group>"; };
 		A73A7A5222F3056700BEAFD0 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		A758672922F80E1D0068F24B /* EditMyToolsMainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EditMyToolsMainViewController.h; sourceTree = "<group>"; };
+		A758672A22F80E1D0068F24B /* EditMyToolsMainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EditMyToolsMainViewController.m; sourceTree = "<group>"; };
 		A7E4BE8D22F3CCBF00B597D2 /* EditMyToolsHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EditMyToolsHeaderView.h; sourceTree = "<group>"; };
 		A7E4BE8E22F3CCBF00B597D2 /* EditMyToolsHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EditMyToolsHeaderView.m; sourceTree = "<group>"; };
 		A7EEDC6A22F30C92006F2A93 /* EditMyToolsCollectionReusableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EditMyToolsCollectionReusableView.h; sourceTree = "<group>"; };
 		A7EEDC6B22F30C92006F2A93 /* EditMyToolsCollectionReusableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EditMyToolsCollectionReusableView.m; sourceTree = "<group>"; };
+		A7FB3DC022F84C360043A1F8 /* EditMyToolsDetailViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EditMyToolsDetailViewCell.h; sourceTree = "<group>"; };
+		A7FB3DC122F84C360043A1F8 /* EditMyToolsDetailViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EditMyToolsDetailViewCell.m; sourceTree = "<group>"; };
+		A7FB3DC322F866B20043A1F8 /* EditToolsDetailHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EditToolsDetailHeaderView.h; sourceTree = "<group>"; };
+		A7FB3DC422F866B20043A1F8 /* EditToolsDetailHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EditToolsDetailHeaderView.m; sourceTree = "<group>"; };
 		E1E39D80FEAB0C46D3D950ED /* Pods-HTTestTools.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HTTestTools.release.xcconfig"; path = "Target Support Files/Pods-HTTestTools/Pods-HTTestTools.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -133,6 +142,10 @@
 				A73A7A4C22F2FD0C00BEAFD0 /* EditMyToolsCollectionViewCell.m */,
 				A7EEDC6A22F30C92006F2A93 /* EditMyToolsCollectionReusableView.h */,
 				A7EEDC6B22F30C92006F2A93 /* EditMyToolsCollectionReusableView.m */,
+				A7FB3DC022F84C360043A1F8 /* EditMyToolsDetailViewCell.h */,
+				A7FB3DC122F84C360043A1F8 /* EditMyToolsDetailViewCell.m */,
+				A7FB3DC322F866B20043A1F8 /* EditToolsDetailHeaderView.h */,
+				A7FB3DC422F866B20043A1F8 /* EditToolsDetailHeaderView.m */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -140,8 +153,10 @@
 		A73A7A4A22F2F0E800BEAFD0 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				A70192F122F0562E00D919C8 /* EditMyToolsViewController.h */,
-				A70192F222F0562E00D919C8 /* EditMyToolsViewController.m */,
+				A758672922F80E1D0068F24B /* EditMyToolsMainViewController.h */,
+				A758672A22F80E1D0068F24B /* EditMyToolsMainViewController.m */,
+				A70192F122F0562E00D919C8 /* EditMyToolsEditViewController.h */,
+				A70192F222F0562E00D919C8 /* EditMyToolsEditViewController.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -262,10 +277,13 @@
 				A70192CF22F0549C00D919C8 /* main.m in Sources */,
 				A70192C122F0549C00D919C8 /* AppDelegate.m in Sources */,
 				A73A7A4D22F2FD0C00BEAFD0 /* EditMyToolsCollectionViewCell.m in Sources */,
-				A70192F322F0562E00D919C8 /* EditMyToolsViewController.m in Sources */,
+				A758672B22F80E1D0068F24B /* EditMyToolsMainViewController.m in Sources */,
+				A70192F322F0562E00D919C8 /* EditMyToolsEditViewController.m in Sources */,
 				A73A7A5022F2FDAD00BEAFD0 /* EditMyToolsModel.m in Sources */,
 				A7E4BE8F22F3CCBF00B597D2 /* EditMyToolsHeaderView.m in Sources */,
 				A7EEDC6C22F30C92006F2A93 /* EditMyToolsCollectionReusableView.m in Sources */,
+				A7FB3DC522F866B20043A1F8 /* EditToolsDetailHeaderView.m in Sources */,
+				A7FB3DC222F84C360043A1F8 /* EditMyToolsDetailViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

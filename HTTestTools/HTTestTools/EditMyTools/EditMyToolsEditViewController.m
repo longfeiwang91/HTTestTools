@@ -6,7 +6,7 @@
 //  Copyright © 2019 LongfeiWang. All rights reserved.
 //
 
-#import "EditMyToolsViewController.h"
+#import "EditMyToolsEditViewController.h"
 #import "EditMyToolsModel.h"
 #import "EditMyToolsCollectionViewCell.h"
 #import "EditMyToolsCollectionReusableView.h"
@@ -22,7 +22,7 @@ static NSInteger ApplicationColumnNum = 5;
 
 static CGFloat ApplicationSectionHeight = 20;
 
-@interface EditMyToolsViewController ()<UICollectionViewDataSource,UICollectionViewDelegate,EditMyToolsHeaderViewDelegate>
+@interface EditMyToolsEditViewController ()<UICollectionViewDataSource,UICollectionViewDelegate,EditMyToolsHeaderViewDelegate>
 
 @property (nonatomic,strong) NSMutableArray * dataSourceArray;
 
@@ -35,11 +35,13 @@ static CGFloat ApplicationSectionHeight = 20;
 @property (strong, nonatomic) UICollectionView *collectionView;
 @property (nonatomic, assign) BOOL isEditing;
 
-@property (nonatomic, strong) UIButton * rightButton;
+@property(nonatomic, strong) UIButton *cancelBtn;
+
+@property (nonatomic, strong) UIButton * finishBtn;
 
 @end
 
-@implementation EditMyToolsViewController
+@implementation EditMyToolsEditViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -47,7 +49,7 @@ static CGFloat ApplicationSectionHeight = 20;
     self.view.backgroundColor = [UIColor whiteColor];
     
     [self setupUI];
-    [self navigationButtonCommonInit];
+    [self loadNavigation];
 }
 
 #pragma mark - CommonInit
@@ -63,16 +65,20 @@ static CGFloat ApplicationSectionHeight = 20;
     }];
     
 }
-- (void)navigationButtonCommonInit
+- (void)loadNavigation
 {
+    NSDictionary * dict = [NSDictionary dictionaryWithObject:[UIColor whiteColor] forKey:NSForegroundColorAttributeName];
+    self.navigationController.navigationBar.titleTextAttributes = dict;
     
-    //rightButtonItem
-    self.rightButton = [[UIButton alloc] init];
-    [self.rightButton setTitle:@"编辑" forState:UIControlStateNormal];
-    [self.rightButton addTarget:self action:@selector(editAction:) forControlEvents:UIControlEventTouchUpInside];
-    [self.rightButton setTitleColor:[UIColor orangeColor] forState:UIControlStateNormal];
-    UIBarButtonItem *rightButtonItem = [[UIBarButtonItem alloc] initWithCustomView:self.rightButton];
-    self.navigationItem.rightBarButtonItem = rightButtonItem;
+    self.navigationItem.title = @"编辑我的工具";
+    
+    UIBarButtonItem *cancleItem = [[UIBarButtonItem alloc]initWithCustomView:self.cancelBtn];
+    self.navigationItem.leftBarButtonItems = @[cancleItem];
+    
+    UIBarButtonItem *finishItem = [[UIBarButtonItem alloc]initWithCustomView:self.finishBtn];
+    self.navigationItem.rightBarButtonItems = @[finishItem];
+    
+    
     
 }
 
@@ -206,6 +212,7 @@ static CGFloat ApplicationSectionHeight = 20;
 EditMyToolsModel *model = self.tempDataSourceArray[indexPath.section][indexPath.row];
     model.isFirstSection = NO;
     cell.model = model;
+    cell.editState = EditMyToolsCollectionViewCellEditStateEdit;
     
     cell.buttonClickBlock =^(EditMyToolsModel *model){
         
@@ -358,47 +365,17 @@ EditMyToolsModel *model = self.tempDataSourceArray[indexPath.section][indexPath.
     return image;
 }
 
-- (void)editAction:(UIButton *)rightButton
-{
-    self.isEditing = !self.isEditing;
-    //默认selected为NO.
-    if(self.isEditing)
-    {
-        //编辑.
-        [rightButton setTitle:@"完成" forState:UIControlStateNormal];
-        //leftButtonItem
-        UIBarButtonItem *leftButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"取消" style:UIBarButtonItemStylePlain target:self action:@selector(cancelAction)];
-        self.navigationItem.leftBarButtonItem = leftButtonItem;
-        
-//        self.myApplicationArray = nil;
-//        self.dataArray = nil;
-//        self.myApplicationTitleArray = nil;
-    }
-    else
-    {
-        //保存.
-//        [[YDSortTool sharedSortTool] addApplicationModelArray:self.myApplicationArray  ApplicationType:YDApplicationTypeCommen];
-        [rightButton setTitle:@"编辑" forState:UIControlStateNormal];
-        self.navigationItem.leftBarButtonItem = nil;
-//        self.myApplicationArray = nil;
-//        self.myApplicationTitleArray = nil;
-//        self.dataArray = nil;
-    }
-    [self.collectionView reloadData];
+#pragma mark - 点击事件
+-(void)cancelClick{
+    self.navigationController.navigationBar.hidden = YES;
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
-
-- (void)cancelAction
-{
-    NSLog(@"点了取消恢复原样");
-    self.isEditing = NO;
-//    self.myApplicationArray = nil;
-//    self.dataArray = nil;
-//    self.myApplicationTitleArray = nil;
-    self.navigationItem.leftBarButtonItem = nil;
-    [self.rightButton setTitle:@"编辑" forState:UIControlStateNormal];
-    [self.collectionView reloadData];
+-(void)finishClick{
+    self.navigationController.navigationBar.hidden = YES;
+    [self.navigationController popViewControllerAnimated:YES];
 }
+
 #pragma mark - 懒加载
 
 - (UICollectionView *)collectionView
@@ -424,6 +401,35 @@ EditMyToolsModel *model = self.tempDataSourceArray[indexPath.section][indexPath.
     }
     return _collectionView;
 }
+
+- (UIButton *)cancelBtn{
+    if (!_cancelBtn) {
+        
+        _cancelBtn = [UIButton buttonWithType:UIButtonTypeSystem];
+        _cancelBtn.bounds = CGRectMake(0, 0, 44, 44);
+        _cancelBtn.titleLabel.font = [UIFont systemFontOfSize:30*kWidthScale];
+        [_cancelBtn setTitleColor:kWhiteColor forState:UIControlStateNormal];
+        [_cancelBtn setTitle:@"取消" forState:UIControlStateNormal];
+
+        [_cancelBtn addTarget:self action:@selector(cancelClick) forControlEvents:UIControlEventTouchUpInside];
+    
+    }
+    return _cancelBtn;
+}
+
+- (UIButton *)finishBtn{
+    if (!_finishBtn) {
+        
+        _finishBtn = [UIButton buttonWithType:UIButtonTypeSystem];
+        _finishBtn.bounds = CGRectMake(0, 0, 44, 44);
+        _finishBtn.titleLabel.font = [UIFont systemFontOfSize:30*kWidthScale];
+        [_finishBtn setTitleColor:kWhiteColor forState:UIControlStateNormal];
+        [_finishBtn setTitle:@"完成" forState:UIControlStateNormal];
+        [_finishBtn addTarget:self action:@selector(finishClick) forControlEvents:UIControlEventTouchUpInside];
+    }
+    return _finishBtn;
+}
+
 
 - (NSMutableArray *)dataSourceArray
 {

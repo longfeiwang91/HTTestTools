@@ -12,22 +12,20 @@
 typedef void(^EditMyToolsCollectionViewCellBlock)(EditMyToolsModel *model);
 
 
-typedef NS_ENUM(NSInteger, EditMyToolsCollectionViewCellEditButtonState) {
+typedef NS_ENUM(NSInteger, EditMyToolsCollectionViewCellEditState) {
     
-    EditMyToolsCollectionViewCellEditButtonStateNone,
-    EditMyToolsCollectionViewCellEditButtonStateAdd,
-    EditMyToolsCollectionViewCellEditButtonStateRemove,
-    EditMyToolsCollectionViewCellEditButtonStateNonRemove,
+    EditMyToolsCollectionViewCellEditStateEdit,
+    EditMyToolsCollectionViewCellEditStateDetail,
     
 };
 
 @interface EditMyToolsCollectionViewCell : UICollectionViewCell
 
+@property(nonatomic, assign) EditMyToolsCollectionViewCellEditState editState;
+
 @property(nonatomic, copy) EditMyToolsCollectionViewCellBlock buttonClickBlock;
 
 @property(nonatomic, strong) EditMyToolsModel *model;
 
-//- (void)updateUIWithApplicationModel:(EditMyToolsModel *)model;
-//- (void)setEditState:(EditMyToolsCollectionViewCellEditButtonState )state;
 
 @end
